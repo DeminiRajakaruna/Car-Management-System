@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="506.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cw.admin.adminlogin">
+   <children>
+      <Button layoutX="576.0" layoutY="351.0" mnemonicParsing="false" onAction="#enter" prefHeight="43.0" prefWidth="158.0" text="Enter">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="424.0" layoutY="247.0" prefHeight="18.0" prefWidth="196.0" text="Admin password">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font></Label>
+      <PasswordField fx:id="input" layoutX="576.0" layoutY="247.0" prefHeight="43.0" prefWidth="211.0" />
+      <TextArea layoutX="22.0" layoutY="35.0" prefHeight="86.0" prefWidth="833.0" text="Welcome to Admin Login">
+         <font>
+            <Font name="Bell MT Bold" size="48.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="247.0" fitWidth="283.0" layoutX="90.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../loginlogo.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

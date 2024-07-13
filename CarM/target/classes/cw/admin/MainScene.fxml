@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cw.admin.maincontroller">
+   <children>
+      <Button layoutX="600.0" layoutY="98.0" mnemonicParsing="false" onAction="#Admin" prefHeight="66.0" prefWidth="142.0" text="Admin">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="41.34" offsetX="5.0" offsetY="5.0" radius="21.68" width="47.38">
+               <color>
+                  <Color red="0.18431372940540314" green="0.18431372940540314" blue="0.18431372940540314" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button layoutX="451.0" layoutY="98.0" mnemonicParsing="false" onAction="#Customer" prefHeight="66.0" prefWidth="153.0" text="Customer">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="41.34" offsetX="5.0" offsetY="5.0" radius="21.68" width="47.38">
+               <color>
+                  <Color red="0.18431372940540314" green="0.18431372940540314" blue="0.18431372940540314" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button layoutX="308.0" layoutY="98.0" mnemonicParsing="false" onAction="#Owner" prefHeight="66.0" prefWidth="142.0" text="Owner">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="44.36" offsetX="5.0" offsetY="5.0" radius="22.435000000000002" width="47.38">
+               <color>
+                  <Color red="0.18431372940540314" green="0.18431372940540314" blue="0.18431372940540314" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button layoutX="152.0" layoutY="98.0" mnemonicParsing="false" onAction="#Maintaince" prefHeight="66.0" prefWidth="154.0" text="Technician">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="41.34" offsetX="5.0" offsetY="5.0" radius="21.68" width="47.38">
+               <color>
+                  <Color red="0.18431372940540314" green="0.18431372940540314" blue="0.18431372940540314" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <TextField layoutX="-2.0" prefHeight="98.0" prefWidth="663.0" text="Ceylon Car Private Limited">
+         <font>
+            <Font name="Bell MT Bold" size="48.0" />
+         </font>
+      </TextField>
+      <TextArea layoutY="98.0" prefHeight="66.0" prefWidth="154.0" text="Drive Without Worries" />
+      <TextArea layoutX="416.0" layoutY="164.0" prefHeight="318.0" prefWidth="318.0" text="We are Sri Lanka’s best &#10;automobile care specialists&#10; – with state-of- the-art &#10;service centers located &#10;across the country. Each &#10;center is extremely &#10;committed to providing &#10;our clientswith the very&#10; best services.&#10;&#10;Cntact Us&#10;Phone.............0112765903&#10;Email...............ceyloancars@gmail.com&#10;Adress......................20/6 kandy road,battaramulla">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="243.0" fitWidth="434.0" layoutX="-13.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Dee/Desktop/20211409.kasun%20(1)/assignment2/demo1/src/car1.jpj.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c2c4b" height="75.0" layoutY="164.0" stroke="BLACK" strokeType="INSIDE" width="416.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#07325b" height="98.0" layoutX="657.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
+   </children>
+</AnchorPane>

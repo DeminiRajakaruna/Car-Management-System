@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cw.admin.maintenance">
+   <children>
+      <TableView fx:id="tableView1" layoutX="35.0" layoutY="57.0" prefHeight="281.0" prefWidth="820.0">
+         <columns>
+            <TableColumn fx:id="colMake1" editable="false" prefWidth="100.0" resizable="false" sortable="false" text="Make" />
+            <TableColumn fx:id="colModel1" editable="false" prefWidth="120.0" resizable="false" sortable="false" text="Model" />
+            <TableColumn fx:id="colYear1" editable="false" minWidth="3.0" prefWidth="100.0" resizable="false" sortable="false" text="Year" />
+            <TableColumn fx:id="colMileage1" editable="false" minWidth="0.0" prefWidth="100.0" resizable="false" sortable="false" text="Mileage" />
+            <TableColumn fx:id="colCost1" editable="false" minWidth="0.0" prefWidth="105.0" resizable="false" sortable="false" text="Cost" visible="false" />
+            <TableColumn fx:id="colReport1" editable="false" minWidth="0.0" prefWidth="81.0" resizable="false" sortable="false" text="report" visible="false" />
+            <TableColumn fx:id="ColMaintenance1" prefWidth="140.0" text="Maintenance" />
+            <TableColumn fx:id="ColName" prefWidth="138.0" text="Customer Name" />
+            <TableColumn fx:id="ColTelephone" prefWidth="120.0" text="Telephone" />
+         </columns>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TableView>
+      <GridPane layoutX="939.0" layoutY="57.0" prefHeight="327.0" prefWidth="263.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="textfieldMake" alignment="CENTER" onAction="#AddReport" promptText="Make" GridPane.columnIndex="1" />
+            <TextField fx:id="textfieldModel" alignment="CENTER" onAction="#AddReport" promptText="Model" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textfieldYear" alignment="CENTER" onAction="#AddReport" promptText="Year" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="textfieldMileage" alignment="CENTER" onAction="#AddReport" promptText="Mileage" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="172.0" text="Make" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="178.0" text="Model" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="179.0" text="Year" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="180.0" text="Mileage" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="180.0" text="Customer Name" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="180.0" text="Telephone" GridPane.rowIndex="5" />
+            <TextField fx:id="textfieldName" alignment="CENTER" onAction="#AddReport" promptText="Name" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="textfieldTelephone" alignment="CENTER" onAction="#AddReport" promptText="Telphone" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="180.0" text="Service Cost" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="180.0" text="Report" GridPane.rowIndex="7" />
+            <TextField fx:id="textfieldCost" alignment="CENTER" onAction="#AddReport" promptText="Cost" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="textfieldAddReport" alignment="TOP_LEFT" onAction="#AddReport" prefHeight="40.0" prefWidth="131.0" promptText="Add Report" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="180.0" text="Month" GridPane.rowIndex="8" />
+            <ComboBox fx:id="MonthMenu" prefWidth="150.0" promptText="Select Month" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <Button layoutX="969.0" layoutY="713.0" mnemonicParsing="false" onAction="#Back" prefHeight="41.0" prefWidth="217.0" text="Save And Back to Main Menu" />
+      <TableView fx:id="tableView" layoutX="36.0" layoutY="461.0" prefHeight="313.0" prefWidth="820.0">
+        <columns>
+          <TableColumn fx:id="colMake" prefWidth="75.0" text="Make" />
+          <TableColumn fx:id="colModel" prefWidth="75.0" text="Model" />
+            <TableColumn fx:id="colYear" prefWidth="65.0" text="Year" />
+            <TableColumn fx:id="colMileage" prefWidth="85.0" text="Mileage" />
+            <TableColumn fx:id="colCustomerName" prefWidth="138.0" text="Customer Name" />
+            <TableColumn fx:id="colTelephone" prefWidth="86.0" text="Telephone" />
+            <TableColumn fx:id="colCost" prefWidth="75.0" text="Cost" />
+            <TableColumn fx:id="colReport" prefWidth="220.0" text="Report" />
+            <TableColumn fx:id="ColMaintenance" prefWidth="75.0" text="Maintenance" visible="false" />
+        </columns>
+      </TableView>
+      <Button layoutX="1001.0" layoutY="410.0" mnemonicParsing="false" onAction="#AddReport" prefHeight="25.0" prefWidth="185.0" text="Add Report" />
+      <Separator layoutX="35.0" layoutY="419.0" prefHeight="0.0" prefWidth="820.0" />
+      <Separator layoutX="901.0" layoutY="57.0" orientation="VERTICAL" prefHeight="697.0" prefWidth="5.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="27.0" prefHeight="17.0" prefWidth="892.0" text="Requested maintenance">
+         <font>
+            <Font name="Candara Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="431.0" prefHeight="30.0" prefWidth="845.0" text="Completed maintenance">
+         <font>
+            <Font name="Candara Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="542.0" layoutY="366.0" mnemonicParsing="false" onAction="#AddToReport" prefHeight="36.0" prefWidth="281.0" text="Add Selected Item To Report" />
+      <Label alignment="CENTER" layoutX="1007.0" layoutY="27.0" prefHeight="17.0" prefWidth="220.0" text="Report">
+         <font>
+            <Font name="Candara" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="msg" layoutX="962.0" layoutY="577.0" prefHeight="41.0" prefWidth="217.0" />
+   </children>
+</AnchorPane>

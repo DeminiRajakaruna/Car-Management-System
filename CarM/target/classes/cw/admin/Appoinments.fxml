@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cw.admin.Appointments">
+    <children>
+        <Button layoutX="1014.0" layoutY="394.0" mnemonicParsing="false" onAction="#AddAppointment" prefHeight="30.0" prefWidth="217.0" text="Add Appointment" />
+        <Button layoutX="1014.0" layoutY="745.0" mnemonicParsing="false" onAction="#Back" prefHeight="41.0" prefWidth="217.0" text="Save And Back to Main Menu" />
+        <Button layoutX="29.0" layoutY="323.0" mnemonicParsing="false" onAction="#Remove" prefHeight="41.0" prefWidth="425.0" text="Remove Selected Appoinment" />
+        <GridPane layoutX="976.0" layoutY="53.0" prefHeight="327.0" prefWidth="263.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextField fx:id="textfieldMake" alignment="CENTER" promptText="Make" GridPane.columnIndex="1" />
+                <TextField fx:id="textfieldModel" alignment="CENTER" promptText="Model" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="textfieldYear" alignment="CENTER" promptText="Year" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="textfieldMileage" alignment="CENTER" promptText="Mileage" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="textfieldPrice" alignment="CENTER" promptText="Price" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="172.0" text="Make" />
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="178.0" text="Model" GridPane.rowIndex="1" />
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="180.0" text="Mileage" GridPane.rowIndex="3" />
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="187.0" text="Price" GridPane.rowIndex="4" />
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="172.0" text="Telephone" GridPane.rowIndex="6" />
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="179.0" text="Year" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="172.0" text="Appointment" GridPane.rowIndex="7" />
+            <DatePicker fx:id="textfieldAppointment" promptText="Appointment" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="172.0" text="Name" GridPane.rowIndex="5" />
+            <TextField fx:id="textfieldName" alignment="CENTER" promptText="Name" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="textfieldTelephone" alignment="CENTER" promptText="Telephone" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            </children>
+        </GridPane>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="14.0" prefHeight="17.0" prefWidth="892.0" text="Requested TestDrives">
+            <font>
+                <Font name="Candara Italic" size="24.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tableView1" layoutX="29.0" layoutY="424.0" prefHeight="327.0" prefWidth="892.0">
+            <columns>
+                <TableColumn fx:id="colMake1" editable="false" prefWidth="88.0" resizable="false" sortable="false" text="Make" />
+                <TableColumn fx:id="colModel1" editable="false" prefWidth="105.0" resizable="false" sortable="false" text="Model" />
+                <TableColumn fx:id="colYear1" editable="false" prefWidth="82.0" resizable="false" sortable="false" text="Year" />
+                <TableColumn fx:id="colMileage1" editable="false" minWidth="0.0" prefWidth="99.0" resizable="false" sortable="false" text="Mileage" />
+                <TableColumn fx:id="colPrice1" editable="false" minWidth="0.0" prefWidth="96.0" resizable="false" sortable="false" text="Price" />
+                <TableColumn fx:id="colName1" prefWidth="140.0" text=" Name" />
+                <TableColumn fx:id="colTelephone1" prefWidth="135.0" text="Telephone" />
+                <TableColumn fx:id="colSoldDate" prefWidth="145.0" text="Sold Date" />
+            </columns>
+        </TableView>
+        <Button layoutX="483.0" layoutY="323.0" mnemonicParsing="false" onAction="#SelectAppointment" prefHeight="41.0" prefWidth="431.0" text="Add Date To Selected Appointment" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="379.0" prefHeight="17.0" prefWidth="892.0" text="Sold Cars">
+            <font>
+                <Font name="Candara Italic" size="24.0" />
+            </font>
+        </Label>
+        <Separator layoutX="29.0" layoutY="378.0" prefHeight="0.0" prefWidth="892.0" />
+        <Separator layoutX="957.0" layoutY="44.0" orientation="VERTICAL" prefHeight="742.0" prefWidth="5.0" />
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="tableView" layoutX="29.0" layoutY="44.0" prefHeight="271.0" prefWidth="892.0">
+         <columns>
+            <TableColumn fx:id="colMake" editable="false" prefWidth="89.0" resizable="false" sortable="false" text="Make" />
+            <TableColumn fx:id="colModel" editable="false" prefWidth="76.0" resizable="false" sortable="false" text="Model" />
+            <TableColumn fx:id="colYear" editable="false" prefWidth="65.0" resizable="false" sortable="false" text="Year" />
+            <TableColumn fx:id="colMileage" editable="false" minWidth="0.0" prefWidth="96.0" resizable="false" sortable="false" text="Mileage" />
+            <TableColumn fx:id="colPrice" editable="false" minWidth="0.0" prefWidth="92.0" resizable="false" sortable="false" text="Price" />
+            <TableColumn fx:id="colName" prefWidth="142.0" text=" Name" />
+            <TableColumn fx:id="colTelephone" prefWidth="115.0" text="Telephone" />
+            <TableColumn fx:id="colAppointment" prefWidth="216.0" text="Appointment" />
+         </columns>
+      </TableView>
+      <Label fx:id="msg" layoutX="1014.0" layoutY="588.0" prefHeight="41.0" prefWidth="217.0" />
+    </children>
+</AnchorPane>

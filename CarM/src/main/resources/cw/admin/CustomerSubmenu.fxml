@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1002.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cw.admin.CustomerSubmenu">
+   <children>
+      <Button layoutX="339.0" layoutY="286.0" mnemonicParsing="false" onAction="#Inventory" prefHeight="75.0" prefWidth="252.0" text="Products">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font></Button>
+      <Button layoutX="319.0" layoutY="411.0" mnemonicParsing="false" onAction="#Status" prefHeight="82.0" prefWidth="320.0" text="For Order and Service Status">
+         <font>
+            <Font name="Arial Narrow" size="24.0" />
+         </font></Button>
+      <Button layoutX="731.0" layoutY="534.0" mnemonicParsing="false" onAction="#Back" prefHeight="63.0" prefWidth="199.0" text="Main Page">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font></Button>
+      <TextArea layoutX="78.0" layoutY="117.0" prefHeight="115.0" prefWidth="871.0" text="Welcome To Customer Page">
+         <font>
+            <Font name="Bell MT Bold" size="48.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

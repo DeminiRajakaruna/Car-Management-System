@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="604.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cw.admin.Teclogin">
+   <children>
+      <Button layoutX="560.0" layoutY="479.0" mnemonicParsing="false" text="Button" />
+      <Label layoutX="268.0" layoutY="216.0" text="Label" />
+      <PasswordField layoutX="391.0" layoutY="245.0" />
+      <TextField layoutX="68.0" layoutY="51.0" prefHeight="73.0" prefWidth="653.0" text="Welcome to Technician Login" />
+   </children>
+</AnchorPane>
